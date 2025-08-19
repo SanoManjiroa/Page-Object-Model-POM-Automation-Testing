@@ -20,4 +20,23 @@ class HomeScreen(BaseScreen): #classni ichida har bitta driverni ota klassdan ch
     def is_homescreen_title_exist(self):
         self.is_element_visible(self.screen_title)
 
-    def click_on
+    def name_enter_data(self):
+        self.enter_data(self.name_field, "Irodabonu")
+
+    def email_enter_data(self):
+        self.enter_data(self.email_field, "kamilovairodabonu@gmail.com")
+
+    def password_enter_data(self):
+        self.enter_data(self.password_field, "Irodabonu2004*")
+
+    def number_enter_data(self):
+        self.enter_data(self.number_field, "+99893578178")
+
+    def click_check_box_agree(self):
+        self.click(self.agree_checkbox)
+
+    def click_sign_up_button(self):
+        self.click(self.sign_up_button)
+        print("✅ Success page detected!")
+
+
